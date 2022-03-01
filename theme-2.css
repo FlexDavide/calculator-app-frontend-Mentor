@@ -1,0 +1,61 @@
+:root{
+    /* background variables */
+    --bg-main: hsl(0, 0%, 90%);
+    --bg-toggle-keypad: hsl(0, 5%, 81%);
+    --bg-screen: hsl(0, 0%, 93%);
+
+    /* keys variables */
+    --key-bg: hsl(185, 42%, 37%);
+    --key-shadow: hsl(185, 58%, 25%);
+
+    --equal-key: hsl(25, 98%, 40%);
+    --equal-key-shadow: hsl(25, 99%, 27%);
+    
+    /* text-variables */
+    --txt-primary:hsl(60, 10%, 19%);
+    --txt-white: hsl(0,0%,100%);
+
+    --key-bg-2: hsl(45,7%,89%)
+}
+
+
+section{
+    color:var(--txt-primary);
+    background-color: var(--bg-main);
+}
+
+.display{
+    background-color: var(--bg-screen);
+}
+
+.color-change{
+    background-color: var(--bg-screen);
+}
+
+input[type=radio]:checked:after{
+    background-color: var(--equal-key);
+    border: 1px solid var(--equal-key);
+}
+
+.all_buttons{
+    background-color: var(--bg-toggle-keypad);
+}
+
+.button{
+    background-color: var(--key-bg-2);
+    box-shadow: 1px 3px var(--key-shadow);
+    color: var(--txt-primary);
+}
+
+.reset,
+.delete_last_input {
+    background-color: var(--key-bg);
+    box-shadow: 1px 5px var(--key-shadow);
+    color: var(--txt-white);
+}
+
+.equal{
+    background-color: var(--equal-key);
+    box-shadow: 1px 5px var(--equal-key-shadow);
+    color: var(--txt-white);
+}
